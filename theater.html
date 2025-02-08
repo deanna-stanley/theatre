@@ -12,7 +12,7 @@
         const MATINEE_DISCOUNT = 3;
 
         function getBaseTicketCost(age) {
-            if ((age < 12) || (age > 65)) {
+            if ((age <= 12) || (age >= 65)) {
                 return DISCOUNTED_TICKET_PRICE;
             }
             return GA_TICKET_PRICE;
